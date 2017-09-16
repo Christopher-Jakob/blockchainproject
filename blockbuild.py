@@ -1,3 +1,8 @@
+# Honey Badgers
+# Block Builder
+
+#! Python3
+
 import datetime as date
 from uuid import uuid4
 from block import Block
@@ -12,6 +17,7 @@ def next_block(last_block, verification_process_ID, fname, lname, ss_num, DOB):
     this_timestamp = date.datetime.now()
     this_verification_process_ID = verification_process_ID
     this_block_ID = uuid4()
+    # print(this_block_ID)
     this_fname = fname
     this_lname = lname
     this_ss_num = ss_num
@@ -26,10 +32,9 @@ if __name__ == '__main__':
     previous_block = blockchain[0]
 
 
-
     bool = True
 
-    #add blocks to the chain
+    # add blocks to the chain
     while bool:
         verification_process_ID = input("Enter Verification Process ID: ")
         fname = input("Enter first name: ")

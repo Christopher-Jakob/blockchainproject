@@ -1,6 +1,9 @@
+# Honey Badgers
+# Block Class
+
+#! Python3
+
 import hashlib as hash
-
-
 
 # builds a block
 class Block:
