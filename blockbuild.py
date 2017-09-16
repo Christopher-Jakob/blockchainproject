@@ -1,17 +1,23 @@
 import datetime as date
+from uuid import uuid4
 from block import Block
 
 def create_block_zero():
 
     # Create a zero block
-    return Block(0, date.datetime.now(), "Block Zero", "0")
+    return Block(0, date.datetime.now(), "VP", uuid4(), "fname", "lname", "ss", "DOB", 0)
 
-def next_block(last_block):
+def next_block(last_block, verification_process_ID, fname, lname, ss_num, DOB):
     this_index = last_block.index + 1
     this_timestamp = date.datetime.now()
-    this_data = "Block" + str(this_index)
+    this_verification_process_ID = verification_process_ID
+    this_block_ID = uuid4()
+    this_fname = fname
+    this_lname = lname
+    this_ss_num = ss_num
+    this_DOB = DOB
     this_hash = last_block.hash
-    return Block(this_index,this_timestamp, this_data, this_hash)
+    return Block(this_index,this_timestamp, this_verification_process_ID, this_block_ID, this_fname, this_lname, this_ss_num, this_DOB, this_hash)
 
 if __name__ == '__main__':
 
@@ -20,11 +26,21 @@ if __name__ == '__main__':
     previous_block = blockchain[0]
 
 
-    num_of_block_to_add = 20
+
+    bool = True
 
     #add blocks to the chain
-    for i in range(0, num_of_block_to_add):
-        block_to_add = next_block(previous_block)
+    while bool:
+        verification_process_ID = input("Enter Verification Process ID: ")
+        fname = input("Enter first name: ")
+        lname = input("Enter last name: ")
+        ss_num = input ("Enter social security number: ")
+        DOB = input("Enter date of birth: ")
+        cont = input("Do you want to continue (y or n): ")
+
+        bool = [True, False][cont == "n"]
+
+        block_to_add = next_block(previous_block, verification_process_ID, fname, lname, ss_num, DOB)
         blockchain.append(block_to_add)
         previous_block = block_to_add
 
