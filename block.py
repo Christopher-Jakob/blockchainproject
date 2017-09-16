@@ -5,6 +5,7 @@
 
 import hashlib as hash
 
+
 # builds a block
 class Block:
 
@@ -22,6 +23,8 @@ class Block:
             self.previous_hash = previous_hash
             self.hash = self.hash_block()
 
+
+
     # SHA256 hash block
     def hash_block(self):
         sha = hash.sha256()
@@ -36,3 +39,5 @@ class Block:
                     str(self.previous_hash)).encode('utf-8'))
 
         return sha.hexdigest()
+
+
