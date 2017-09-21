@@ -1,0 +1,50 @@
+.container-fluid{
+  height: 100%;
+}
+.container{
+  height: 100%;
+  position: relative;
+  left: 3%;
+}
+
+
+#leftcolumn{
+  height: 80%;
+  display: inline-block;
+  width:15%;
+}
+
+#visitpurpose{
+  margin-top: 3%;
+  width: 80%;
+}
+
+#vitals{
+  position: relative;
+  top: 19%;
+  width: 100%;
+
+}
+
+label, input{
+  margin-bottom: .5%;
+
+}
+#age{
+  position: relative;
+  left: 13%;
+}
+
+#patientinfodiv{
+  display: inline-block;
+  position: absolute;
+  left: 25%;
+  top: 13%;
+  width: 60%;
+  height: 50%;
+
+}
+
+#remarks{
+  margin-top: 10%;
+}

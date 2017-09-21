@@ -3,13 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SigninpageComponent } from './signinpage/signinpage.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { CreateviewrecordComponent } from './createviewrecord/createviewrecord.component';
+import { CreaterecordComponent } from './createviewrecord/createrecord/createrecord.component';
+import { ViewrecordComponent } from './createviewrecord/viewrecord/viewrecord.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SigninpageComponent,
-    NavbarComponent
+    CreateviewrecordComponent,
+    CreaterecordComponent,
+    ViewrecordComponent,
   ],
   imports: [
     BrowserModule
