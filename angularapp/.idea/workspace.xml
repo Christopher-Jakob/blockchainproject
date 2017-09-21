@@ -20,8 +20,18 @@
             <file leaf-file-name="viewrecord.component.css" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/blockchain/src/app/createviewrecord/viewrecord/viewrecord.component.css">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="779">
-                    <caret line="48" column="16" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+                  <state relative-caret-position="599">
+                    <caret line="53" column="21" lean-forward="false" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="navbar.component.css" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/blockchain/src/app/navbar/navbar.component.css">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="20">
+                    <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
                     <folding />
                   </state>
                 </provider>
@@ -35,21 +45,41 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blockchain/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="33" lean-forward="false" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+            <state relative-caret-position="100">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewrecord.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navbar.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blockchain/src/app/navbar/navbar.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewrecord.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blockchain/src/app/createviewrecord/viewrecord/viewrecord.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+            <state relative-caret-position="20">
+              <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blockchain/src/app/navbar/navbar.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -58,8 +88,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blockchain/src/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="120">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -68,8 +98,8 @@
       <file leaf-file-name="signinpage.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blockchain/src/app/signinpage/signinpage.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -82,10 +112,10 @@
               <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
-                <marker date="1506031076513" expanded="true" signature="647:661" ph="[...]" />
-                <marker date="1506031076513" expanded="true" signature="647:745" ph="{...}" />
-                <marker date="1506031076513" expanded="true" signature="674:697" ph="[...]" />
-                <marker date="1506031076513" expanded="true" signature="770:773" ph="{...}" />
+                <marker date="1506036264956" expanded="true" signature="729:743" ph="[...]" />
+                <marker date="1506036264956" expanded="true" signature="729:827" ph="{...}" />
+                <marker date="1506036264956" expanded="true" signature="756:779" ph="[...]" />
+                <marker date="1506036264956" expanded="true" signature="852:855" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -106,20 +136,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/blockchain/src/app/navbar/navbar.component.html" />
         <option value="$PROJECT_DIR$/blockchain/src/index.html" />
         <option value="$PROJECT_DIR$/blockchain/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/blockchain/.angular-cli.json" />
         <option value="$PROJECT_DIR$/blockchain/src/app/signinpage/signinpage.component.html" />
         <option value="$PROJECT_DIR$/blockchain/src/app/signinpage/signinpage.component.css" />
-        <option value="$PROJECT_DIR$/blockchain/src/styles.css" />
         <option value="$PROJECT_DIR$/blockchain/src/app/createviewrecord/createrecord/createrecord.component.html" />
         <option value="$PROJECT_DIR$/blockchain/src/app/createviewrecord/createrecord/createrecord.component.css" />
         <option value="$PROJECT_DIR$/blockchain/src/app/createviewrecord/createviewrecord.component.html" />
         <option value="$PROJECT_DIR$/blockchain/src/app/createviewrecord/createviewrecord.component.css" />
-        <option value="$PROJECT_DIR$/blockchain/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/blockchain/src/app/createviewrecord/viewrecord/viewrecord.component.html" />
+        <option value="$PROJECT_DIR$/blockchain/src/app/navbar/navbar.component.html" />
+        <option value="$PROJECT_DIR$/blockchain/src/app/navbar/navbar.component.css" />
+        <option value="$PROJECT_DIR$/blockchain/src/styles.css" />
         <option value="$PROJECT_DIR$/blockchain/src/app/createviewrecord/viewrecord/viewrecord.component.css" />
+        <option value="$PROJECT_DIR$/blockchain/src/app/createviewrecord/viewrecord/viewrecord.component.html" />
+        <option value="$PROJECT_DIR$/blockchain/src/app/app.component.html" />
       </list>
     </option>
   </component>
@@ -254,6 +285,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="signinpage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blockchain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="navbar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -435,12 +492,12 @@
       <workItem from="1505521610879" duration="2665000" />
       <workItem from="1505595459806" duration="47000" />
       <workItem from="1506009512785" duration="6103000" />
-      <workItem from="1506019075766" duration="13679000" />
+      <workItem from="1506019075766" duration="17244000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22494000" />
+    <option name="totallyTimeSpent" value="26059000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3994" y="24" width="970" height="1056" extended-state="4" />
@@ -551,10 +608,10 @@
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <marker date="1506031076513" expanded="true" signature="647:661" ph="[...]" />
-            <marker date="1506031076513" expanded="true" signature="647:745" ph="{...}" />
-            <marker date="1506031076513" expanded="true" signature="674:697" ph="[...]" />
-            <marker date="1506031076513" expanded="true" signature="770:773" ph="{...}" />
+            <marker date="1506036264956" expanded="true" signature="729:743" ph="[...]" />
+            <marker date="1506036264956" expanded="true" signature="729:827" ph="{...}" />
+            <marker date="1506036264956" expanded="true" signature="756:779" ph="[...]" />
+            <marker date="1506036264956" expanded="true" signature="852:855" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -601,10 +658,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <marker date="1506031076513" expanded="true" signature="647:661" ph="[...]" />
-            <marker date="1506031076513" expanded="true" signature="647:745" ph="{...}" />
-            <marker date="1506031076513" expanded="true" signature="674:697" ph="[...]" />
-            <marker date="1506031076513" expanded="true" signature="770:773" ph="{...}" />
+            <marker date="1506036264956" expanded="true" signature="729:743" ph="[...]" />
+            <marker date="1506036264956" expanded="true" signature="729:827" ph="{...}" />
+            <marker date="1506036264956" expanded="true" signature="756:779" ph="[...]" />
+            <marker date="1506036264956" expanded="true" signature="852:855" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -651,10 +708,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <marker date="1506031076513" expanded="true" signature="647:661" ph="[...]" />
-            <marker date="1506031076513" expanded="true" signature="647:745" ph="{...}" />
-            <marker date="1506031076513" expanded="true" signature="674:697" ph="[...]" />
-            <marker date="1506031076513" expanded="true" signature="770:773" ph="{...}" />
+            <marker date="1506036264956" expanded="true" signature="729:743" ph="[...]" />
+            <marker date="1506036264956" expanded="true" signature="729:827" ph="{...}" />
+            <marker date="1506036264956" expanded="true" signature="756:779" ph="[...]" />
+            <marker date="1506036264956" expanded="true" signature="852:855" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -675,8 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/src/app/navbar/navbar.component.ts" />
-    <entry file="file://$PROJECT_DIR$/blockchain/src/app/navbar/navbar.component.html" />
     <entry file="file://$PROJECT_DIR$/blockchain/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -693,24 +748,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/src/app/signinpage/signinpage.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blockchain/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <marker date="1506031076513" expanded="true" signature="647:661" ph="[...]" />
-            <marker date="1506031076513" expanded="true" signature="647:745" ph="{...}" />
-            <marker date="1506031076513" expanded="true" signature="674:697" ph="[...]" />
-            <marker date="1506031076513" expanded="true" signature="770:773" ph="{...}" />
+            <marker date="1506036264956" expanded="true" signature="729:743" ph="[...]" />
+            <marker date="1506036264956" expanded="true" signature="729:827" ph="{...}" />
+            <marker date="1506036264956" expanded="true" signature="756:779" ph="[...]" />
+            <marker date="1506036264956" expanded="true" signature="852:855" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -749,14 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/src/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blockchain/src/app/createviewrecord/createrecord/createrecord.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
@@ -789,26 +828,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/src/app/app.component.html">
+    <entry file="file://$PROJECT_DIR$/blockchain/src/app/navbar/navbar.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="33" lean-forward="false" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+        <state relative-caret-position="60">
+          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/src/app/createviewrecord/viewrecord/viewrecord.component.html">
+    <entry file="file://$PROJECT_DIR$/blockchain/src/app/navbar/navbar.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        <state relative-caret-position="20">
+          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blockchain/src/app/navbar/navbar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blockchain/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blockchain/src/app/createviewrecord/viewrecord/viewrecord.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="48" column="16" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        <state relative-caret-position="599">
+          <caret line="53" column="21" lean-forward="false" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blockchain/src/app/createviewrecord/viewrecord/viewrecord.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blockchain/src/app/signinpage/signinpage.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blockchain/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>

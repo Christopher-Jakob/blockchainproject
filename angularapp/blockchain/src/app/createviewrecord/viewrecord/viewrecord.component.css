@@ -9,6 +9,7 @@
 
 
 #leftcolumn{
+  border: solid black;
   height: 80%;
   display: inline-block;
   width:15%;
@@ -37,6 +38,7 @@ label, input{
 
 #patientinfodiv{
   display: inline-block;
+  border: solid black;
   position: absolute;
   left: 25%;
   top: 13%;
@@ -45,6 +47,16 @@ label, input{
 
 }
 
+button{
+  margin-top: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
+  position: relative;
+  left: 90%;
+}
+
 #remarks{
+  position: relative;
+  bottom: 21%;
   margin-top: 10%;
 }

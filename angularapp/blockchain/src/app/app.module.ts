@@ -6,6 +6,7 @@ import { SigninpageComponent } from './signinpage/signinpage.component';
 import { CreateviewrecordComponent } from './createviewrecord/createviewrecord.component';
 import { CreaterecordComponent } from './createviewrecord/createrecord/createrecord.component';
 import { ViewrecordComponent } from './createviewrecord/viewrecord/viewrecord.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { ViewrecordComponent } from './createviewrecord/viewrecord/viewrecord.co
     CreateviewrecordComponent,
     CreaterecordComponent,
     ViewrecordComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule
