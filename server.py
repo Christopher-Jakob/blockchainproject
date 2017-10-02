@@ -26,7 +26,7 @@ def server(listen_port):
 
     #bind socket to a host and known good port
     server_sock.bind(('localhost', int(listen_port)))
-    print("past bind")
+
     while True:
         #listen for connection
         print ("waiting for connecion...")
@@ -38,7 +38,8 @@ def server(listen_port):
 
         # maintain thread count and names them
         process_Name = "p" + str(thread_count)
-        print("prcoess name: " + process_Name)
+        print("process name: " + process_Name)
+
         thread_count = thread_count + 1
         thread_list.append(process_Name)
 
