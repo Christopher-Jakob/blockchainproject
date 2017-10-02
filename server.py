@@ -2,17 +2,22 @@
 #! Block Chain Server
 
 #! Python 3
+# Server needs to be started before you can connect clients.
+
+# run in terminal: python3 server.py <Port>
+# the port number entered will be the one all clients use to connect.
+
 
 import getopt, sys, threading, socket
 
 thread_list = []
 
 def usage(script):
-    print("Usage: python " + script + " -l <listening port number>")
+    print("Usage: python3 " + script + " -l <listening port number>")
 
 
 
-def server(blk_chn_port):
+def server(listen_port):
     thread_count = 0
 
     # create server object
@@ -20,7 +25,7 @@ def server(blk_chn_port):
     server_sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
     #bind socket to a host and known good port
-    server_sock.bind(('localhost', int(blk_chn_port)))
+    server_sock.bind(('localhost', int(listen_port)))
     print("past bind")
     while True:
         #listen for connection
@@ -33,11 +38,11 @@ def server(blk_chn_port):
 
         # maintain thread count and names them
         process_Name = "p" + str(thread_count)
-        print("prcoess name: " + process_Name);
+        print("prcoess name: " + process_Name)
         thread_count = thread_count + 1
         thread_list.append(process_Name)
 
-        threading.Thread(target=handler, args=[blk_chn_port, addr]).start()
+        threading.Thread(target=handler, args=[listen_port, addr]).start()
 
 def handler(client_sock, addr):
     print ("Connected")

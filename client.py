@@ -1,7 +1,22 @@
+#! HoneyBadgers MedSolution
+#! Block Chain Server
+
+#! Python 3
+# Server needs to be started before you can connect clients.
+
+# run in terminal: python3 client.py -l <Port> -p <Port>
+# -l port number has to be unique
+# -p port number has to be same as port number used in server
+
+# port specified after -l will be used to send listen for requests, we might not need this...to be decided.
+# port specified after -p is used to connect to server.
+
+
+
 import getopt, sys, threading, socket
 
 def usage(script):
-    print("Usage: python " + script + " -l <listening port number> -p <connect server port>")
+    print("Usage: python3 " + script + " -l <listening port number> -p <connect server port>")
 
 def client(l_port, c_port):
 
