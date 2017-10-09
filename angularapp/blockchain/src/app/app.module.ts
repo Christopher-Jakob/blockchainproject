@@ -7,6 +7,8 @@ import { CreateviewrecordComponent } from './createviewrecord/createviewrecord.c
 import { CreaterecordComponent } from './createviewrecord/createrecord/createrecord.component';
 import { ViewrecordComponent } from './createviewrecord/viewrecord/viewrecord.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { EditrecordComponent } from './createviewrecord/editrecord/editrecord.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 
 @NgModule({
@@ -17,6 +19,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     CreaterecordComponent,
     ViewrecordComponent,
     NavbarComponent,
+    EditrecordComponent,
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule
