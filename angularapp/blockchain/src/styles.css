@@ -1,6 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+div{
+  border: solid purple;
 
-html, body, container{
-  height: 100%;
 }
 
+.row{
+  border: solid yellow;
+}
+
+input{
+  width: 50%;
+}
+
+ input.ng-invalid.ng-touched {
+  border: solid red 1px;
+}
+
+.wrong{
+  color: red;
+}
+
+.redstar{
+  font-size: 20px;
+  color: red;
+}

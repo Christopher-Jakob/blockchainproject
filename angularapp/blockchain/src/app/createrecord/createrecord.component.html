@@ -1,0 +1,79 @@
+<div class="container">
+
+  <div class="col-md-12 text-center">
+    Create a new record
+  </div>
+  <div class="formdiv col-md-12">
+    <p *ngIf="submitted"> Nice Record bro</p>
+    <form *ngIf="!submitted" (ngSubmit)="createRecord()" #f="ngForm">
+      <label for="firstname">First name</label>
+      <br>
+      <input type="text"
+             id="firstname"
+             ngModel
+             name="firstname"
+             required
+             #firstname = "ngModel"> <span class="redstar">*</span>
+      <br>
+      <p class="wrong help-block" *ngIf="!firstname.valid && firstname.touched"> First Name is required</p>
+
+      <label for="lastname" id="lastname"> Last Name</label>
+      <br>
+      <input type="text"
+             ngModel
+             name="lastname"
+             required
+             #lastname = "ngModel"> <span class="redstar">*</span>
+      <br>
+      <p class="wrong help-block" *ngIf="!lastname.valid && lastname.touched"> Last Name is required</p>
+
+      <label for="dob">Date Of Birth</label>
+      <br>
+      <input class=""
+             type="text"
+             id="dob"
+             ngModel
+             name="dob"
+             required
+             #dob="ngModel"> <span class="redstar">*</span>
+      <br>
+      <p class=" help-block wrong" *ngIf="!dob.valid && dob.touched"> Date Of Birth is required</p>
+
+      <label for="ssn"> Social Security Number</label>
+      <br>
+      <input type="text"
+             id="ssn"
+             ngModel
+             name="ssn"
+             required
+             #ssn ="ngModel"> <span class="redstar">*</span>
+      <br>
+      <p class="wrong help-block" *ngIf="!ssn.valid && ssn.touched"> Social Security Number is required</p>
+
+      <label for="allergies">allergies</label>
+      <br>
+      <input type="text"
+             id="allergies"
+             ngModel
+             name="allergies">
+      <p>seperate allergies by a comma</p>
+      <br>
+      <label for="notes">Notes</label>
+      <br>
+      <textarea rows="10"
+                cols="80"
+                id="notes"
+                ngModel
+                name="notes">
+
+      </textarea>
+      <br>
+      <button class="honeybutton"
+              type="submit"
+      [disabled]="!f.valid">Create Record</button>
+
+    </form>
+
+  </div> <!--formdiv-->
+
+</div> <!--contatiner-->

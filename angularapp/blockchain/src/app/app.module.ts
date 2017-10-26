@@ -1,29 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule} from '@angular/forms';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
-import { SigninpageComponent } from './signinpage/signinpage.component';
-import { CreateviewrecordComponent } from './createviewrecord/createviewrecord.component';
-import { CreaterecordComponent } from './createviewrecord/createrecord/createrecord.component';
-import { ViewrecordComponent } from './createviewrecord/viewrecord/viewrecord.component';
+import { CreaterecordComponent } from './createrecord/createrecord.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { EditrecordComponent } from './createviewrecord/editrecord/editrecord.component';
-import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SigninpageComponent,
-    CreateviewrecordComponent,
     CreaterecordComponent,
-    ViewrecordComponent,
     NavbarComponent,
-    EditrecordComponent,
-    PagenotfoundComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
