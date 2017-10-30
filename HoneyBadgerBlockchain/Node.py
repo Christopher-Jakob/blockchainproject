@@ -27,30 +27,22 @@ def work():
 		
 		blockchain = pickle.loads(blocks)
 		
-		#print("Doing work on these blocks: {}".format(blockchain))
-		#save into blockchain array
-		
-		#Work should somehow have to do with hashing of the most recent block right?
-		
 		num = randint(0, 20)
 		time.sleep(1)
-		print("working to solve block... I will guess {}!\n".format(num))
+		print("[Work ] Working to solve block... I will guess {}!\n".format(num))
 		if num < 10:
 			#you win... return new block
-			print("Sending block to the guy... I am Node {}".format(nodeID))
-			#instead of meaningless JSON... this needs to be a python Block object. 
+			print("I win? Sending block to the server")
 			lastBlock = blockchain[-1]
-			new_block = Block(int(lastBlock.index)+1, lastBlock.hash, date.datetime.now(), nodeID, num, uuid4())	#increment the index, give this NodeID, put the prev Block Hash
+			new_block = Block(int(lastBlock.index)+1, lastBlock.hash, date.datetime.now(), nodeID, num, uuid4())
 			
 			requests.post(server_url + "/addBlock",  json = new_block.toJSON())
 			return
 		#else, enter while loop again
 
 if __name__ == "__main__":
-	#run code stuffs
 	nodeID = startup()
 	
 	keep_working = True
 	while(keep_working):
-		
 		work()
