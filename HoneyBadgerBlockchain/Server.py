@@ -1,6 +1,6 @@
 '''
 Blockchain internal server by HoneyBadgerMedSolution
-10_30_2017 
+11_06_2017 
 '''
 from flask import Flask, request, jsonify
 import datetime as date
@@ -20,8 +20,8 @@ unverifiedBlocks.append({
 							"DOB" : "1/2/90",
 							"SSN" : "123456789",
 							"allergies" : ["doggos", "advil"],
-							"symptoms" : "itchy elbow", "stuffy nose"
-						})
+							"symptoms" : ["itchy elbow", "stuffy nose"]
+							})
 
 app = Flask(__name__)
 
@@ -116,7 +116,7 @@ def GetAllRecords():
 	jsonChain = []
 	for b in blockchain:
 		jsonChain.append(b.toJSON())
-	return str(jsonChain)
+	return str(jsonChain).replace("'", '"')
 
 @app.route("/getByName", methods=["GET"])
 def GetByName():
@@ -135,7 +135,7 @@ def GetByName():
 			if data['LastName'] == last_name:
 				if data['FirstName'] == first_name:
 					jsonChain.append(block.toJSON())
-	return str(jsonChain)
+	return str(jsonChain).replace("'", '"')
 	
 @app.route("/getBySSN", methods=["GET"])
 def GetBySSN():
@@ -152,7 +152,7 @@ def GetBySSN():
 				pass
 			if data['SSN'] == ssn:
 				jsonChain.append(block.toJSON())
-	return str(jsonChain)
+	return str(jsonChain).replace("'", '"')
 	
 @app.route("/addRecord", methods=["POST"])
 def AddRecord():
