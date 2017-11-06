@@ -1,0 +1,69 @@
+<div class="container">
+
+  <div class="row searchrow">
+    <div id="getallrecords" class="col-md-3">
+      <h4> Get all Records </h4>
+      <br>
+      <button (click)="getallrecords()">Get all Records</button>
+      <br>
+
+    </div>
+    <div id="firstlast" class="col-md-3">
+      <h4>search by first name last name</h4>
+      <form (ngSubmit)="firstlastsearch()" #fl="ngForm">
+        <input type="text"
+               placeholder="First Name"
+               id="firstname"
+               name="firstname"
+               ngModel
+               required>
+
+        <input type="text"
+               placeholder="Last Name"
+               id="lastname"
+               name="lastname"
+               ngModel
+               required>
+      <br>
+      <button type="submit"
+              [disabled]="!fl.valid">Search</button>
+      </form>
+    </div>
+
+    <div id="searchbyssn" class="col-md-3">
+      <h4>search by ssn</h4>
+      <br>
+      <form (ngSubmit)="ssnsearch()" #ssn="ngForm" >
+        <input type="text"
+               id="ssn"
+               name="ssn"
+               ngModel
+               required>
+        <br>
+        <button type="submit"
+        [disabled]="!ssn.valid">Search</button>
+      </form>
+    </div>
+
+    <div id="createbutton">
+      <h4> Create New Record</h4>
+      <br>
+     <a routerLink="/create">Create New Record</a>
+    </div>
+
+  </div> <!-- searchrow-->
+
+  <div *ngFor="let record of showrecords" class="resultsrow row">
+
+    <div class="col-md-3">
+      {{record.data.firstname}}
+      {{record.data.lastname}}
+      {{record.data.DOB}}
+      {{record.data.ssn}}
+      {{record.data.allergies}}
+      {{record.data.symptoms}}
+    </div>
+
+  </div> <!--resultsrow-->
+
+</div> <!-- root container-->

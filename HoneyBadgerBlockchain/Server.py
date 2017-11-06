@@ -15,12 +15,12 @@ blockchain = []
 unverifiedBlocks = deque()
 
 unverifiedBlocks.append({
-							"FirstName" : "Joe",
-							"LastName" : "Smith",
-							"DOB" : "1/2/90",
-							"SSN" : "123456789",
+							"firstname" : "Joe",
+							"lastname" : "Smith",
+							"dob" : "1/2/90",
+							"ssn" : "123456789",
 							"allergies" : ["doggos", "advil"],
-							"symptoms" : "itchy elbow", "stuffy nose"
+							"symptoms" : ["itchy elbow", "stuffy nose"]
 						})
 
 app = Flask(__name__)
@@ -116,7 +116,7 @@ def GetAllRecords():
 	jsonChain = []
 	for b in blockchain:
 		jsonChain.append(b.toJSON())
-	return str(jsonChain)
+	return str(jsonChain).replace("'", '"')
 
 @app.route("/getByName", methods=["GET"])
 def GetByName():
@@ -127,15 +127,15 @@ def GetByName():
 	jsonChain = []
 	for block in blockchain:
 		data = block.data
-		if 'LastName' in data and 'FirstName' in data:
+		if 'lastname' in data and 'firstname' in data:
 			try:
 				data = json.loads(block.data.replace("'", '"'))		#JSON likes " but not '
 			except:
 				pass
-			if data['LastName'] == last_name:
-				if data['FirstName'] == first_name:
+			if data['lastname'] == last_name:
+				if data['firstname'] == first_name:
 					jsonChain.append(block.toJSON())
-	return str(jsonChain)
+	return str(jsonChain).replace("'", '"')
 	
 @app.route("/getBySSN", methods=["GET"])
 def GetBySSN():
@@ -145,14 +145,14 @@ def GetBySSN():
 	jsonChain = []
 	for block in blockchain:
 		data = block.data
-		if 'SSN' in data:
+		if 'ssn' in data:
 			try:
 				data = json.loads(block.data.replace("'", '"'))		#JSON likes " not '
 			except:
 				pass
-			if data['SSN'] == ssn:
+			if data['ssn'] == ssn:
 				jsonChain.append(block.toJSON())
-	return str(jsonChain)
+	return str(jsonChain).replace("'", '"')
 	
 @app.route("/addRecord", methods=["POST"])
 def AddRecord():
