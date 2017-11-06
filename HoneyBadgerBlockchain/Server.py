@@ -15,10 +15,10 @@ blockchain = []
 unverifiedBlocks = deque()
 
 unverifiedBlocks.append({
-							"FirstName" : "Joe",
-							"LastName" : "Smith",
-							"DOB" : "1/2/90",
-							"SSN" : "123456789",
+							"firstname" : "Joe",
+							"lastname" : "Smith",
+							"dob" : "1/2/90",
+							"ssn" : "123456789",
 							"allergies" : ["doggos", "advil"],
 							"symptoms" : ["itchy elbow", "stuffy nose"]
 							})
@@ -120,20 +120,20 @@ def GetAllRecords():
 
 @app.route("/getByName", methods=["GET"])
 def GetByName():
-	last_name = request.args.get('LastName')
-	first_name = request.args.get('FirstName')
+	last_name = request.args.get('lastname')
+	first_name = request.args.get('firstname')
 
 	#find blocks with data containing patient name
 	jsonChain = []
 	for block in blockchain:
 		data = block.data
-		if 'LastName' in data and 'FirstName' in data:
+		if 'lastname' in data and 'firstname' in data:
 			try:
 				data = json.loads(block.data.replace("'", '"'))		#JSON likes " but not '
 			except:
 				pass
-			if data['LastName'] == last_name:
-				if data['FirstName'] == first_name:
+			if data['lastname'] == last_name:
+				if data['firstname'] == first_name:
 					jsonChain.append(block.toJSON())
 	return str(jsonChain).replace("'", '"')
 	
@@ -145,12 +145,12 @@ def GetBySSN():
 	jsonChain = []
 	for block in blockchain:
 		data = block.data
-		if 'SSN' in data:
+		if 'ssn' in data:
 			try:
 				data = json.loads(block.data.replace("'", '"'))		#JSON likes " not '
 			except:
 				pass
-			if data['SSN'] == ssn:
+			if data['ssn'] == ssn:
 				jsonChain.append(block.toJSON())
 	return str(jsonChain).replace("'", '"')
 	
