@@ -11,7 +11,7 @@ from uuid import uuid4
 class Block:
 
 	#Constructor with default values.
-	def __init__(self, index, lastHash, time, verificationProcessID, proof_of_work, blockID, data="dummy data", hash=0):
+	def __init__(self, index, lastHash, time, verificationProcessID, proof_of_work, blockID, data={"dummy":None}, hash=0):
 		self.index = int(index)
 		self.timestamp = time
 		self.previous_hash = lastHash
@@ -40,7 +40,7 @@ class Block:
 				"proof" : str(self.proof_of_work),
 				"blockID" : str(self.block_ID),
 				"hash" : str(self.hash),
-				"data" : str(self.data)}
+				"data" : self.data}
 		return json
 		
 	def fromJSON(blockJSON):

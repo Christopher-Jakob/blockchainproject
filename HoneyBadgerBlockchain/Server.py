@@ -120,8 +120,8 @@ def GetAllRecords():
 
 @app.route("/getByName", methods=["GET"])
 def GetByName():
-	last_name = request.args.get('lastname')
-	first_name = request.args.get('firstname')
+	last_name = request.args.get('LastName')
+	first_name = request.args.get('FirstName')
 
 	#find blocks with data containing patient name
 	jsonChain = []
